@@ -1,5 +1,7 @@
 @charset "utf-8";
+@import url('fontello.css');
 @import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
+/* @import url('https://use.fontawesome.com/releases/v5.8.2/css/all.css'); */
 @import url('normalize.css');
 @import url('reset.css');
 
@@ -114,10 +116,35 @@ a{
   border-bottom: 2px solid black;
 }
 .sub-menu{
-  background-color:skyblue;
   position: absolute;
   top: 47px;
+  white-space: nowrap;
   display: none;
+}
+.menu-act .sub-menu{
+  display: block;
+}
+.sub-menu1, .sub-menu2, sub-menu3{
+  left: 0;
+}
+.sub-menu4, .sub-menu5, .sub-menu6{
+  right: 0;
+}
+.sub-menu li, .sub-menu a{
+  display: inline-block;
+}
+.sub-menu a{
+  padding: 8px 0 8px 10px;
+  margin-right: 10px;
+}
+.sub-menu a::before{
+  content: '\f192';
+  font-family: 'fontello';
+  width: 1em;
+  margin-right: .5em;
+}
+.sub-menu a:hover::before{
+  content: '\e800';
 }
 /* 비주얼 */
 .visual{
