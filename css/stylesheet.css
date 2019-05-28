@@ -89,16 +89,36 @@ a{
   border-top: 2px solid #000;
   height: 47px;
   border-radius: 0 0 15px 15px;
-  padding-left: 225px;
+  padding-left: 229px;
+}
+.menu-item{
+  /* background-color:yellow; */
+  border-left: 2px solid #fff;
+  float:left;
+  position: relative;
+  padding: 0 20px;
 }
 .menu-item-text{
-  background: green;
+  /* background: green; */
+  cursor: pointer;
+  display: block;
+  height: 47px;
+  line-height: 45px;
   color: #fff;
   font-size: 1.6rem;
   font-weight: 700;
   text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
 }
-
+.menu-act .menu-item-text{
+  color: #ff0;
+  border-bottom: 2px solid black;
+}
+.sub-menu{
+  background-color:skyblue;
+  position: absolute;
+  top: 47px;
+  display: none;
+}
 /* 비주얼 */
 .visual{
   background-color: orangered;
