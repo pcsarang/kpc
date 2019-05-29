@@ -6,7 +6,7 @@
 @import url('reset.css');
 
 /* 숨긴 콘텐츠  */
-.readable-hidden{
+.readable-hidden, legend{
   background-color:red;
   position: absolute;
   width: 1px;
@@ -31,7 +31,7 @@ body{
     linear-gradient(#aaa 0%,#eee 30%, #fff 50%, #fff 100%);
   background-repeat: no-repeat;
   background-position: 50% 0; */
-  background: url('images/bg_flower.png') no-repeat 50% 0, #aaa linear-gradient(#aaa 0%,#eee 30%, #fff 50%, #fff 100%);
+  background: url('images/bg_flower.png') no-repeat 50% 0, #aaa linear-gradient(#aaa 0%,#eee 50%, #fff 70%, #fff 100%);
   color: #181818;
   font-family: 'Spoqa Han Sans', sans-serif;
   font-size: 1.4rem;
@@ -227,17 +227,18 @@ a{
 }
 /* 메인 콘텐츠 */
 .main{
-  background-color: blue;
-  height: 60vh;
-  padding: 0 30px;
+  background-color:#fff;
+  border-radius: 15px 15px 0 0;
+  min-height: 450px; 
+  padding: 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 /* 그룹 */
-.group{
+/* .group{
   background-color: lightgreen;
-}
+} */
 .group1{
   width: 250px;
 }
@@ -246,6 +247,72 @@ a{
 }
 .group3{
   width: 190px;
+}
+/* 로그인 */
+.login{
+  border-radius: 5px;
+  background: #ed552f radial-gradient(circle at right top,#ea782f,#ed552f);
+  box-shadow: 5px 5px 0 0 #aaa;
+  padding: 10px;
+}
+.login-heading{
+  color: #ff0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-indent: 10px;
+}
+.login-form{
+  margin-top: 10px;
+  background-color: #fff;
+  border-radius: 5px 5px 0 0;
+  padding: 10px 10px 0 10px;
+}
+.login-form fieldset{
+  /* background-color: yellow; */
+  position: relative;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 10px;
+}
+.login-form label{
+  /* background-color:pink; */
+  display: inline-block;
+  width: 4em;
+}
+.login-form input{
+  width: 90px;
+  height: 22px;
+  border: 1px solid #aaa;
+  padding: 1px 1px 1px 5px;
+}
+.user-pw {
+  margin-top: 6px;
+  /* background: lime; */
+}
+.btn-login{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ed552f;
+  border-radius: 3px;
+  color: #fff;
+  padding: 0;
+  background-color: #ea552f;
+  font-size: 1.2rem;
+}
+.sign{
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 0 0 5px 5px;
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: -1px;
+}
+.sign .icon-right-open::before{
+  color: #ed552f;
+  margin: 0;
 }
 /* 슬로건 */
 .slogan{
