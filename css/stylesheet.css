@@ -25,6 +25,13 @@ html{
 }
 body{
   background-color: #aaa;
+  /* background : color img repeat position */
+  /* url(bg-f.png) no-repeat 50% 0, #aaa, linear-gradient(?) */
+  /* background-image: url('images/bg_flower.png'),
+    linear-gradient(#aaa 0%,#eee 30%, #fff 50%, #fff 100%);
+  background-repeat: no-repeat;
+  background-position: 50% 0; */
+  background: url('images/bg_flower.png') no-repeat 50% 0, #aaa linear-gradient(#aaa 0%,#eee 30%, #fff 50%, #fff 100%);
   color: #181818;
   font-family: 'Spoqa Han Sans', sans-serif;
   font-size: 1.4rem;
@@ -124,7 +131,7 @@ a{
 .menu-act .sub-menu{
   display: block;
 }
-.sub-menu1, .sub-menu2, sub-menu3{
+.sub-menu1, .sub-menu2, .sub-menu3{
   left: 0;
 }
 .sub-menu4, .sub-menu5, .sub-menu6{
@@ -148,8 +155,8 @@ a{
 }
 /* 비주얼 */
 .visual{
-  background-color: orangered;
-  height: 10vh;
+  /* background-color: orangered; */
+  height: 120px;
 }
 /* 메인 콘텐츠 */
 .main{
