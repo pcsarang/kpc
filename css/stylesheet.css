@@ -479,7 +479,7 @@ a{
   top:0;
   right:0;
 }
-.board-more::before{
+.board-more::before .news-more::before{
   color: hsla(110, 70%, 30%, 1);
 }
 .board-list, .board-more{
