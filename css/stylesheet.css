@@ -424,6 +424,72 @@ a{
   height: 22px;
   font-size: 1.3rem;
 }
+/* 공지사항, 자료실 */
+.board{
+  /* background: yellow; */
+  margin-top: 20px;
+  position: relative;
+}
+.tab{
+  /* background: lime; */
+  position: absolute;
+  top:0;
+  border: 1px solid #aaa;
+  border-radius: 5px 5px 0 0;
+  background: #ccc linear-gradient(#ccc,#eee);
+  color: #666;
+  padding: 5px 10px;
+}
+.tab1{
+  left: 0;
+}
+.tab2{
+  left: 73px;
+}
+.tab-act .tab{
+  /* background: pink; */
+  color: #ed552f;
+  border-color: #ed552f #ed552f #fff #ed552f;
+  background: #fff;
+}
+.board-list{
+  padding-top: 45px;
+}
+.board-list li{
+  position: relative;
+  /* background: orange; */
+  margin-bottom: 8px;
+}
+.board-subject{
+  /* background: pink; */
+  display: block;
+  width: 295px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.board-date{
+  /* background: aqua; */
+  position: absolute;
+  top:0;
+  right: 0;
+}
+.board-more{
+  position: absolute;
+  top:0;
+  right:0;
+}
+.board-more::before{
+  color: hsla(110, 70%, 30%, 1);
+}
+.board-list, .board-more{
+  display: none;
+}
+.tab-act .board-list, .tab-act .board-more{
+  display: block;
+}
+
+
 /* 슬로건 */
 .slogan{
   background-color: pink;
