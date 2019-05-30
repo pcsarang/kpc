@@ -281,7 +281,7 @@ a{
 .login-form input{
   width: 90px;
   height: 22px;
-  border: 1px solid #aaa;
+  /* border: 1px solid #aaa; */
   padding: 1px 1px 1px 5px;
 }
 .user-pw {
@@ -316,7 +316,7 @@ a{
 }
 /* 유효성 검사 배너 */
 .validation-list{
-  background-color: yellow;
+  /* background-color: yellow; */
   margin-top: 25px;
 }
 /* .validation-list li{
@@ -336,7 +336,65 @@ a{
   padding: 5px 15px 5px 35px;
   margin: 10px 0;
 }
-
+/* 웹관련 용어 */
+/* .term {
+  background-color: yellow;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #aaa;
+}
+.term-padding{
+  background: pink;
+}
+.term-list{
+  background: lime;
+}
+.term-list-subject{
+  background: orange;
+  width: 160px;
+  float: right;
+}
+.term-list-thumbnail{
+  background: red;
+  float: left;
+}
+.term-list-brief{
+  background: aqua;
+} */
+.term{
+  margin-top: 20px;
+  border:1px solid #aaa;
+  border-radius: 5px;
+  background: #ccc linear-gradient(#ccc, #eee);
+  padding: 10px 15px;
+}
+.term-heading{
+  /* background: pink; */
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.term-list{
+  /* background: lime; */
+  margin-top: 10px;
+}
+.term-list-subject, .term-list-brief{
+  float: right;
+  width: 150px;
+}
+.term-list-subject{
+  /* background: orange; */
+  color: #296897;
+  margin-top: -4px;
+}
+.term-list-thumbnail{
+  /* background: yellow; */
+  float: left;
+}
+.term-list-brief{
+  /* background: pink; */
+  margin-top: 5px;
+}
 /* 슬로건 */
 .slogan{
   background-color: pink;
