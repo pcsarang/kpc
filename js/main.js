@@ -7,6 +7,8 @@ let item = $('.menu-item');
 // item.act <- jquery에서는 chainning이라 함
 // item.on('mouseover',function(){});
 // $(this) <- 현재 객체
+let tab = $('.tab');
+let panel = $('.notice, .pds')
 
 item.attr('tabindex','0');
 
@@ -17,4 +19,21 @@ item.on('mouseover focusin', function(){
 
 header.on('mouseout', function(){
   item.removeClass('menu-act');
+})
+
+// tab.on('click', function(){
+//   panel.removeClass('tab-act');
+//   $(this).parent().addClass('tab-act');
+// });
+// tab.on('keyup', function(e){
+//   if(e.keycode === 13){
+//     panel.removeClass('tab-act');
+//     $(this).parent().addClass('tab-act');
+//   }
+// })
+tab.on('click keyup', function(e){
+  if(e.type === 'click' || e.keycode === '13'){
+    panel.removeClass('tab-act');
+    $(this).parent().addClass('tab-act');
+  }
 })
