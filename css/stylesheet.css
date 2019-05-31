@@ -480,7 +480,7 @@ a{
   top:0;
   right:0;
 }
-.board-more::before .news-more::before{
+.board-more::before .news-more::before, .faverite-more::before{
   color: hsla(110, 70%, 30%, 1);
 }
 .board-list, .board-more{
@@ -552,7 +552,7 @@ a{
   border-top: 1px solid #aaa;
   padding-top: 10px;
 }
-.event-heading, .related-heading{
+.event-heading, .related-heading, .faverite-heading{
   font-size: 1.5rem;
   font-weight: 700;
 }
@@ -611,6 +611,77 @@ a{
   line-height: 25px;
   text-indent: 25px;
 }
+/* 인기 사이트 */
+.faverite{
+  position: relative;
+  margin-top: 20px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 10px;
+  background: #ccc linear-gradient(#ccc, #eee);
+}
+.faverite-list{
+  /* background: yellow; */
+  /* ol 숫자를 안보이게 */
+  /* list-style-type: none; */
+  /* 배경색 바깥부분을 안보이기 */
+  overflow : hidden;
+}
+.faverite-list li{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background: lime; */
+  margin-top: 8px;
+  /* number는 변수임 */
+  counter-increment: number;
+  /* font-size: 1.8rem; */
+}
+.faverite-list li:before{
+  content: counter(number);
+  color: #fff;
+  background: #999;
+  padding: 0 6px;
+  font-size: 1.2rem;
+  border-radius: 2px;
+  margin-right: 5px;
+}
+.up, .stop, .down{
+  /* em 은 inline 형태임 */
+  margin-left: auto;
+  width: 9px;
+  height: 11px;
+  /* float를 주면 무조건 block됨 */
+  /* float: right; */
+  /* position: absolute;
+  top: 50%;
+  right: 0;*/
+  background:  url('images/rank.png') no-repeat;
+  padding-top: 11px;
+  overflow: hidden;
+  margin-top: -5px;
+}
+.stop{
+  background-position: 0 50%;
+}
+.down{
+  background-position: 0 100%;
+}
+
+.faverite-list a{
+  background: pink;
+}
+.faverite-list em{
+  /* background: skyblue; */
+}
+.faverite-more{
+  position: absolute;
+  /* faverite의 padding 값만큼 */
+  top: 10px;
+  right: 10px;
+}
+
 /* 슬로건 */
 .slogan{
   background-color: pink;
