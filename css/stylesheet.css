@@ -538,6 +538,97 @@ a{
   /* background: orange; */
   text-align: center;
 }
+/* 신규 이벤트 */
+.event-related{
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background: #ccc linear-gradient(#ccc, #eee);
+  padding: 10px;
+}
+.event{
+  position: relative;
+}
+.related{
+  border-top: 1px solid #aaa;
+  padding-top: 10px;
+}
+.event-heading, .related-heading{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.point-color{
+  color: #ed552f;
+}
+.event-thumbnail, .event-brief{
+  margin: 10px 0;
+}
+.event-thumbnail{
+  border: 1px solid #aaa;
+  box-shadow: 5px 5px #aaa;
+}
+.btn-event{
+  /* background: yellow; */
+  height: 24px;
+  overflow: hidden;
+  position: absolute;
+  top:0;
+  right:0;
+}
+.btn-event-prev, .btn-event-next{
+  float: left;
+  width: 19px;
+  height: 0;
+  padding: 24px 0 0 0;
+  margin-left: 5px;
+  background: url('images/back_forward.png') no-repeat;
+  border:0;
+}
+.btn-event-next{
+  background-position: 100% 0;
+}
+.related-list{
+  background: #fff;
+  margin-top: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  height: 27px;
+  overflow: hidden;
+}
+
+
+
+/* .event-related{
+  background: #aaa;
+  position: relative;
+}
+.event-heading{
+  background: red;
+  width: 80px;
+  position : absolute;
+
+}
+.event-detail{
+  position: absolute;
+  top: 200px;
+  margin: 100px;
+}
+.event-thumbnail, .event-brief{
+  position: relative;
+} 
+.btn-event{
+  background: #ff0;
+  width: 60px;
+  position: absolute;
+  right: 0;
+}
+.btn-event-prev, .btn-event-next{
+  background: pink url('css/images/backpage_forwardpage.png') no-repeat;
+  display: inline-block;
+  width: 20px;
+  height: 0;
+  padding-top: 20px;
+  overflow: hidden;
+}
 /* 슬로건 */
 .slogan{
   background-color: pink;
