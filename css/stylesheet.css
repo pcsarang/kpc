@@ -480,7 +480,7 @@ a{
   top:0;
   right:0;
 }
-.board-more::before .news-more::before, .faverite-more::before{
+.board-more::before, .news-more::before, .faverite-more::before{
   color: hsla(110, 70%, 30%, 1);
 }
 .board-list, .board-more{
@@ -668,9 +668,8 @@ a{
 .down{
   background-position: 0 100%;
 }
-
 .faverite-list a{
-  background: pink;
+  /* background: pink; */
 }
 .faverite-list em{
   /* background: skyblue; */
@@ -681,15 +680,46 @@ a{
   top: 10px;
   right: 10px;
 }
-
 /* 슬로건 */
 .slogan{
-  background-color: pink;
-  height: 10vh;
+  /* background-color: greenyellow; */
+  position: relative;
+  padding: 15px 100px 15px 180px;
+}
+.slogan-heading{
+  /* background: pink; */
+  position: absolute;
+  left: 35px;
+  bottom: -25px;
+  width: 110px;
+  height: 83px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slogan-heading::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width : 100%;
+  height : 100%;
+  background: url('images/coffee.png') repeat;
+}
+.slogan-content{
+  color: #a09784;
+}
+.slogan-content q::before{
+  font-size: 3rem;
+  position: relative;
+  top: 10px;
+}
+.slogan-content q::after{
+  content: '';
 }
 /* 푸터 */
 .footer-bg{
-  background-color: purple;
+  background: #ccc linear-gradient(#ccc 0%, #eee 30%, #fff 70%, #fff 100%);
 }
 /* 푸터 */
 .footer{
