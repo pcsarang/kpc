@@ -723,6 +723,31 @@ a{
 }
 /* 푸터 */
 .footer{
-  background-color: yellow;
-  height: 10vh;
+  /* background-color: yellow; */
+  position: relative;
+  padding: 15px 100px 15px 180px;
+}
+.footer-logo{
+  /* background: #aaa; */
+  position: absolute;
+  top: 50px;
+  left: 35px;
+}
+.guide-list{
+  background: #7b8385;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  padding: 8px 50px;
+  border-radius: 20px;
+}
+.badge{
+  /* background: orange; */
+  position: absolute;
+  top: 15px;
+  right: 0;
+}
+.address{
+  margin: 10px 0 5px;
 }
